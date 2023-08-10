@@ -4,9 +4,8 @@ import "./home.css";
 import { myContext } from "../../App";
 import Card from "../Card/Card";
 
-
 const Home = () => {
-const context = useContext(myContext)
+  const context = useContext(myContext);
   return (
     <>
       <div>
@@ -15,7 +14,7 @@ const context = useContext(myContext)
             context.state.map((ele) => {
               return (
                 <>
-                  <Card post={ele}/>
+                  <Card post={ele} />
                 </>
               );
             })}
