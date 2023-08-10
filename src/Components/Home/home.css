@@ -1,0 +1,28 @@
+
+.inputContainer{
+    height: 70px;
+    width: 100%;
+    /* box-shadow: 0 0 10px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapContainer{
+    height: 200px;
+    width: 800px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

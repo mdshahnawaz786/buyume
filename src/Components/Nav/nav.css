@@ -1,0 +1,9 @@
+
+.navContainer{
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+}
+.navContainer h1 {
+    text-align: center;
+}
