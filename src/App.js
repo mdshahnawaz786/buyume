@@ -10,6 +10,7 @@ export const myContext = createContext();
 function App() {
   const [state, setstate] = useState([]);
   const [stateOne, setsatetOne] = useState("");
+  const [search, setSearch] = useState([]);
 
   useEffect(() => {
     apiFetching(setstate);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <myContext.Provider value={{ state, stateOne }}>
+      <myContext.Provider value={{ state, stateOne ,search, setSearch}}>
         <div className="App">
           <Nav setsatetOne={setsatetOne} />
           <Routes>

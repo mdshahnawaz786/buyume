@@ -8,23 +8,11 @@ const Search = () => {
   const context = useContext(myContext);
   console.log(context.stateOne);
   console.log(context.state);
-  const [search, setSearch] = useState([]);
+  
 
-  function filterText() {
-    setSearch(
-      context.state.filter((ele) => {
-        if (ele.body.toLowerCase().includes(context.stateOne.toLowerCase())) {
-          return ele;
-        }
-      })
-    );
-  }
-  useEffect(() => {
-    filterText();
-  }, []);
   return (
     <div className="search">
-      {search.map((ele) => {
+      {context.search.map((ele) => {
         return <Card post={ele} />;
       })}
       <Link to="/">
